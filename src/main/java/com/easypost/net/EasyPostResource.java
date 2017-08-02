@@ -28,6 +28,7 @@ import com.easypost.exception.EasyPostException;
 import com.easypost.model.BatchStatus;
 import com.easypost.model.Event;
 import com.easypost.model.EventDeserializer;
+import com.easypost.model.PaymentLog;
 import com.easypost.model.Rate;
 import com.easypost.model.RateDeserializer;
 import com.easypost.model.Shipment;
@@ -420,8 +421,6 @@ public abstract class EasyPostResource {
 				+ CHARSET
 				+ ". Please email contact@easypost.com for assistance.", e);
 		}
-
-        // System.out.println(url);
 
 		EasyPostResponse response;
 		try {

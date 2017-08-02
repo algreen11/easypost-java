@@ -14,6 +14,7 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonPrimitive;
 import com.easypost.net.EasyPostResource;
 import com.easypost.model.Event;
+import com.easypost.model.PaymentLog;
 
 public class EventDeserializer implements JsonDeserializer<Event> {
 
@@ -26,6 +27,7 @@ public class EventDeserializer implements JsonDeserializer<Event> {
         objectMap.put("CustomsItem", CustomsItem.class);
         objectMap.put("Event", Event.class);
         objectMap.put("Parcel", Parcel.class);
+        objectMap.put("PaymentLog", PaymentLog.class);
         objectMap.put("PostageLabel", PostageLabel.class);
         objectMap.put("Rate", Rate.class);
         objectMap.put("Refund", Refund.class);
